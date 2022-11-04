@@ -1,0 +1,59 @@
+<!--pages/user/index.wxml-->
+<view class="userBox">
+	<view class="balance">
+		 <view class="balance_left">
+			  <image src="../../images/user/gold.png" mode=""/>
+		 </view>
+		 <view class="balance_right">
+			  <view class="right_user">账户余额</view>
+				<view class="right_money">
+					￥4元
+				</view>
+				<view class="right_detail">
+					查看余额明细
+				</view>
+			</view>
+	</view>
+	<view class="remaining">
+		<view class="remaining_money">充值金额</view>
+		<view class="remaining_centent">
+			<view class="remaining_item {{number==0?'active': ''}}" data-num="0" bindtap="handelPitch">
+				<view class="remaining_item_num">
+					  0.1
+				</view>
+				<view class="remaining_item_info">
+			   充值10元送1元
+				</view>
+			</view>
+			<view class="remaining_item {{number==1?'active': ''}}" data-num="1" bindtap="handelPitch">
+				<view class="remaining_item_num" >
+					  10
+				</view>
+				<view class="remaining_item_info">
+			   充值10元送1元
+				</view>
+			</view>
+			<view class="remaining_item {{number==2?'active': ''}}" data-num="2" bindtap="handelPitch">
+				<view class="remaining_item_num">
+					  20
+				</view>
+				<view class="remaining_item_info">
+			   充值20元送2元
+				</view>
+			</view>
+			<view class="remaining_item {{number==3?'active': ''}}" data-num="3" bindtap="handelPitch">
+				<view class="remaining_item_num">
+					  50
+				</view>
+				<view class="remaining_item_info">
+			   充值50元送5元
+				</view>
+			</view>
+		</view>
+	</view>
+	<view class="recharge">
+		<view class="recharge_text" bindtap="handelRecharge">
+			 去充值
+		</view>
+	</view>
+</view>

@@ -1,0 +1,77 @@
+/* pages/usercentre/usercentre.wxss */
+.box{
+	height: 100%;
+	background-color: #eee;
+}
+
+.top{
+	height: 200rpx;
+	background: linear-gradient(#f5bf56,#fadfa6);
+	display: flex;
+}
+.head{
+	width: 20%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.head image {
+	width: 100rpx;
+	height: 100rpx;
+	border-radius: 50%;
+}
+.userinfo{
+	display: flex;
+	flex-direction: column;
+}
+.name{
+  margin: 50rpx 0 20rpx 0;
+}
+.wallet{
+	background-color: #fff;
+	padding: 20rpx 10rpx;
+	display: flex;
+	align-items: center;
+	margin: 20rpx 0;
+	position: relative;
+}
+.infoTitle{
+	position: absolute;
+	top: 5rpx;
+	left: 230rpx;
+	background-color: red;
+	color: #fff;
+	padding: 5rpx;
+	font-size: 20rpx;
+	border-radius: 10rpx;
+}
+.wallet image{
+	width: 50rpx;
+	height: 50rpx;
+	padding: 0 20rpx;
+}
+.list .list_item{
+	background-color: #fff;
+	padding: 20rpx 10rpx;
+	display: flex;
+	align-items: center;
+	border-bottom: 1px solid #eee;
+}
+
+.list .list_item image{
+	padding: 0 20rpx;
+	width: 50rpx;
+	height: 50rpx;
+}
+.opinion{
+	background-color: #fff;
+	padding: 20rpx 10rpx;
+	display: flex;
+	align-items: center;
+	margin: 20rpx 0;
+}
+.opinion image {
+	width: 50rpx;
+	height: 50rpx;
+	padding: 0 20rpx;
+}

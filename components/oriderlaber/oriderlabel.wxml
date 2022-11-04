@@ -1,0 +1,4 @@
+<!--components/oriderlabel/oriderlabel.wxml-->
+    <view class="balance">
+			<slot></slot>
+		</view>

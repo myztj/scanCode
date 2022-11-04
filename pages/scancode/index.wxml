@@ -1,0 +1,9 @@
+<!--pages/scancode/index.wxml-->
+<view class="container">
+<view class="swiper">
+	<i-swiper swiperDate="{{swiperDate}}"></i-swiper>
+</view>
+<view class="scanCode">
+  <i-scancode  data="{{data}}" status="{{show}}" bindhandelClick="handelClick"></i-scancode>
+</view>
+</view>

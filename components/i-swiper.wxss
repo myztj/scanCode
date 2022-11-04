@@ -1,0 +1,12 @@
+/* components/i-swiper.wxss */
+
+swiper{
+	width: 100%;
+	height: 400rpx;
+	background-color: blanchedalmond;
+}
+
+image{
+	width: 100%;
+	height: 100%;
+}

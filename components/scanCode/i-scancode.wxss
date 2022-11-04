@@ -1,0 +1,40 @@
+/* components/scanCode/i-scancode.wxss */
+
+.scan{
+	width: 300rpx;
+	height: 300rpx;
+	background-color: #f3bd48;
+	border-radius: 50%;
+	margin: 100rpx auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border: 20rpx solid #f8de99;
+	color: #ffffff;
+	position: relative;
+}
+.img{
+	width: 180rpx;
+	height: 150rpx;
+}
+
+text{
+	display: block;
+	width: 210rpx;
+	text-align: center;
+}
+
+.num{
+	position: absolute;
+	top: 40rpx;
+	right: 30rpx;
+	width: 40rpx;
+	height: 40rpx;
+	background-color: red;
+	text-align: center;
+	line-height: 40rpx;
+	font-size: 25rpx;
+	color: #ffffff;
+	border-radius: 50%;
+}

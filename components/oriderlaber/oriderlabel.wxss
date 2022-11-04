@@ -1,0 +1,8 @@
+/* components/oriderlabel/oriderlabel.wxss */
+.balance{
+	padding: 30rpx 20rpx;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #fff;
+}

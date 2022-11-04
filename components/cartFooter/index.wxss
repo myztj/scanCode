@@ -1,0 +1,35 @@
+/* components/cartFooter/index.js.wxss */
+.footer_top{
+	padding-left: 10rpx;
+	height: 80rpx;
+	box-shadow: 0 0 12rpx #cccccc;
+	line-height: 80rpx;
+	color: #666;
+	background-color: #fff;
+
+}
+
+.footer_top  text{
+	color: red;
+	font-weight: 500;
+}
+
+.footer_down{
+	display: flex;
+}
+
+.footer_down view{
+	   height: 100rpx;
+			flex: 1;
+			text-align: center;
+			line-height: 100rpx;
+			color: #ffffff;
+}
+
+.footer_down .add{
+	background-color: #fe9800;
+}
+
+.footer_down .close{
+	background-color: #fe0000;
+}

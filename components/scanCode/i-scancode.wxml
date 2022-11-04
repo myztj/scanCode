@@ -1,0 +1,11 @@
+<!--components/scanCode/i-scancode.wxml-->
+<view class="scan" bindtap="handelClick" wx:if="{{status}}">
+	<image class="img" src="../../images/qrcode.png"></image>
+	<text>请扫描商品条形码</text>
+</view>
+
+<view class="scan" bindtap="handelGotoOrider" wx:else="">
+   <text class="num">{{data.length}}</text>
+	<image class="img" src="../../images/cart_index.png"></image>
+	<text>点击去支付</text>
+</view>

@@ -1,0 +1,6 @@
+<!--components/i-swiper.wxml-->
+<swiper indicator-dots 	indicator-color="#fff" autoplay circular>
+<swiper-item wx:for="{{swiperDate}}" wx:key="index">
+<image src="{{item.imageUrl}}" alt=""/>
+</swiper-item>
+</swiper>

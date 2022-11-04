@@ -1,0 +1,11 @@
+<!--components/cartItem/index.vue.wxml-->
+<view class="centent_item" wx:for="{{cartList}}" wx:key="index">
+<view class="title">{{item.title}}</view>
+<view class="describe">规格： 500ml/瓶</view>
+<view class="price">￥{{item.price}}</view>
+<view class="but">
+<view class="sub" data-id="{{item._id}}" bindtap="handelSub">-</view>
+<input type="text" value="{{item.num}}" data-id="{{item._id}}" bindchange="inputChange"/>
+<view class="plus" data-id="{{item._id}}" bindtap="handelPlus">+</view>
+</view>
+</view>

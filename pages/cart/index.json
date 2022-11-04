@@ -1,0 +1,7 @@
+{
+	"usingComponents": {
+		"cartItem":"../../components/cartItem/index",
+		"cartFooter":"../../components/cartFooter/index"
+	},
+	"navigationBarTitleText": "购物车"
+}

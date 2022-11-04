@@ -1,0 +1,18 @@
+<!--pages/cart/index.wxml-->
+
+<view class="box"  wx:if="{{cartList.length>0}}">
+<view class="centent">
+<cartItem cartList="{{cartList}}" bindinputChange="inputChange" bindhandelSub="handelSub" bindhandelPlus="handelPlus"></cartItem>
+</view>
+<view class="footer">
+<cartFooter cartList="{{cartList}}" total="{{total}}" bindhandelOrder="handelOrder" bindgoonScanCode="goonScanCode"></cartFooter>
+</view>
+</view>
+
+<view wx:else class="hintInfo">
+	<view class="title">购物车时空的哦~</view>
+	<view class="imgBox">
+		<image src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fp1.itc.cn%2Fq_70%2Fimages03%2F20220311%2F128ae7472fe54c2199d3377497078614.png&refer=http%3A%2F%2Fp1.itc.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1669969464&t=3cc67074ad70e1ab8d114e7d9b38c587" mode=""/>
+	</view>
+	<view class="scanCode" bindtap="goonScanCode">扫一扫条形码</view>
+</view>

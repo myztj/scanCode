@@ -1,0 +1,57 @@
+/* components/cartItem/index.vue.wxss */
+
+ .centent_item {
+	padding: 20rpx;
+	border-bottom: 1px solid #ccc;
+	height: 210rpx;
+	line-height: 60rpx;
+	position: relative;
+}
+
+.centent_item .title{
+	font-weight: 500;
+	font-size: 35rpx;
+}
+
+.centent_item .describe{
+	color: #9999;
+}
+
+.centent_item .price{
+	color: #fe0000;
+}
+
+.centent_item .but{
+	position: absolute;
+	right: 5rpx;
+	bottom: 15rpx;
+	display: flex;
+	align-items: center;
+}
+
+.centent_item .but view{
+	width: 60rpx;
+	height: 60rpx;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 60rpx;
+}
+
+.centent_item .but .sub{
+	border: 1rpx solid #fe9800;
+	color: #fe9800;
+}
+
+.centent_item input{
+	text-align: center;
+	width: 120rpx;
+	height: 60rpx;
+	border: 1rpx solid #fe9800;
+	margin: 0 5rpx;
+	border-radius: 40rpx;
+}
+
+.centent_item .but .plus{
+	 background-color: #fe9800;
+	 color: #ffffff;
+}

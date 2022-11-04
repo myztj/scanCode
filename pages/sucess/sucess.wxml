@@ -1,0 +1,22 @@
+<!--pages/sucess/sucess.wxml-->
+<view class="successBox">
+		<view class="hint">
+			<image src="../../images/face.png" mode=""/>
+			<text>支付成功</text>
+			<view class="back" bindtap="gotoHome">返回首页</view>
+		</view>
+	<view class="footer">
+		<view class="title"><text class="symbol">*</text> 猜你喜欢 <text class="symbol">*</text></view>
+		<view class="footer_item" wx:for="{{[1,2,3,4,5,6,7,8]}}" wx:key="index">
+			<image src="../../images/00.png" mode=""/>
+			<text class="footer_title">海南现摘芒果</text>
+			<text class="footer_price">￥29.9</text>
+			<view class="sales">
+				<text style="color: #777;">销量：201件</text>
+				<view class="btn">
+					立即购买
+				</view>
+			</view>
+		</view>
+	</view>
+</view>

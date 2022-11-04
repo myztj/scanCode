@@ -1,0 +1,9 @@
+<!--components/cartFooter/index.js.wxml-->
+<view class="footer_top">
+总价：<text>￥{{total}}</text>
+</view>
+<view class="footer_down">
+<view class="add" bindtap="goonScanCode">继续添加</view>
+<view class="close" bindtap="handelOrder">去结算<text>({{cartList.length}})</text></view>
+</view>
+

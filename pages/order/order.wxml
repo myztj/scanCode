@@ -1,0 +1,32 @@
+<!--pages/order/order.wxml-->
+<view class="orderBox">
+	<view class="order">
+		<view class="order_item" wx:if="{{index<unfoldNum}}" wx:for="{{oriderlist}}" wx:key="index">
+			<view class="order_title">
+			<text>{{item.title}}</text>
+				<text class="order_price">￥{{item.price}}</text>
+			</view>
+	      <view class="order_num">×{{item.num}}</view>
+		</view>
+		<view class="unfold" bindtap="handelUnfold">共{{oriderlist.length}}件商品 展开</view>
+		<view class="balance">
+			<view>余额 <text style="color: red;">(￥{{priceNum}})</text></view>
+			<switch  color="#ffa72b" checked="{{checkout}}" bindchange="switchChange"/>
+		</view>
+		<view class="balance">
+			<view>商品金额</view>
+			<view style="color: red;">￥{{totalNum}}</view>
+		</view>
+		<view class="balance">
+			<view>余额减扣</view>
+			<view style="color: red;">-￥{{subPrice}}</view>
+		</view>
+	</view>
+	<view class="info">
+		<icon class="icon-box-img" type="warn" color="#C9C9C9"></icon>请支付完成后携带的商品
+	</view>
+	<view class="order_footer">
+		<view class="price">实际支付：<text>￥{{practicalPrice}}</text></view>
+		<view class="btn" bindtap="payAffirm">确认支付</view>
+	</view>
+</view>

@@ -1,0 +1,8 @@
+/* pages/scancode/index.wxss */
+.container{
+	display: flex;
+	flex-direction: column;
+}
+.scanCode{
+	 flex: 1;
+}
